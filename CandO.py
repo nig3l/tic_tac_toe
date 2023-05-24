@@ -46,7 +46,9 @@ print("furcoat color :",julio.color)
 
 #to demonstrate inheritance
 
-class Person():
+'''
+
+class Person(): #in python3 and above class person() is the same as class person(object)
 
   #constructor
     def __init__(self,name):
@@ -75,7 +77,34 @@ print(emp.getName(),emp.isEmployee())
 
 emp = Employee("akainu")
 print(emp.getName(),emp.isEmployee())
+'''
 
+#calling constructors of the parent class
+
+class Person(object):
+    
+    def __init__(self,name,idNumber):
+        self.name = name
+        self.idNumber = idNumber
+
+    def display(self):
+       print(self.name) 
+       print(self.idNumber)
+   
+   #child class
+     
+class Employee(Person):
+
+    def __init__(self,name,idNumber,salary,post):
+        self.salary = salary
+        self.post = post
+
+        #invoking the parent class constructor
+        Person.__init__(self,name,idNumber)
+
+a = Employee('Blackbeard',40042,'200k','product manager')
+a.display()
+       
 
         
 
