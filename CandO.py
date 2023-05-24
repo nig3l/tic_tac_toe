@@ -2,7 +2,7 @@
 
 '''class person:
 
-    def __init__(self,age,name,height):
+    def __init__(self,age,name,height): # parametarized constructor
         self.age = age
         self.name = name
         self.height = height
@@ -17,13 +17,13 @@ person1.say_hi()'''
 
 #class v instance variables
 
-class Dog:
+'''class Dog:
 
     #class variable
 
     animal = 'mammal'
 
-    #attr initialisation
+    #attr initialisation/constructor
     def __init__(self,breed,color):
         #instance variables
         self.breed = breed
@@ -42,7 +42,40 @@ print("animal type :",julio.animal)
 print("breed :",julio.breed)
 print("furcoat color :",julio.color)
 
+'''
+
+#to demonstrate inheritance
+
+class Person(object):
+
+  #constructor
+    def __init__(self,name):
+        self.name = name
+
+#to get name 
+    def getName(self):
+        return self.name
+    
+#to check whether is an employee
+
+    def isEmployee(self):
+        return False
+    
+#Subclass 
+
+class Employee(Person):
+
+    #to check whether is an employee
+
+    def isEmployee(self):
+        return True
+    
+emp = Person("smoker")
+print(emp.getName(),emp.isEmployee())
+
+emp = Employee("akainu")
+print(emp.getName(),emp.isEmployee())
 
 
-
+        
 
