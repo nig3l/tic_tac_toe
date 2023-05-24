@@ -46,7 +46,7 @@ print("furcoat color :",julio.color)
 
 #to demonstrate inheritance
 
-class Person(object):
+class Person():
 
   #constructor
     def __init__(self,name):
