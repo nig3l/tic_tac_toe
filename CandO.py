@@ -81,7 +81,7 @@ print(emp.getName(),emp.isEmployee())
 
 #calling constructors of the parent class
 
-class Person(object):
+'''class Person(object):
     
     def __init__(self,name,idNumber):
         self.name = name
@@ -100,11 +100,65 @@ class Employee(Person):
         self.post = post
 
         #invoking the parent class constructor
-        Person.__init__(self,name,idNumber)
+        Person.__init__(self,name,idNumber) #i believe the super() function can be used this way
 
 a = Employee('Blackbeard',40042,'200k','product manager')
 a.display()
-       
+       '''
+
+#the super() function
+
+'''class person():
+    def __init__(self,name ,age):
+        self.name = name
+        self.age = age
+        
+    def display(self):
+        print(self.name,self.age)
+        
+
+class student(person):
+    def __init__(self, name, age):
+        self.sName = name
+        self.sAge = age
+
+        #inheriting properties of the parent class
+        super().__init__('Gorosei',79)
+
+    def display_info(self):
+        print(self.sName, self.sAge)
+
+obj = student('usop',18)
+obj.display()
+obj.display_info()
+'''
+
+#adding more features
+
+class Flour():
+
+    def __init__(self,dom,exd):
+        self.dom = dom
+        self.exd = exd
+        
+    def display(self):
+        print(self.dom,self.exd)
+
+class flour1(Flour):
+
+    def __init__(self, dom, exd,type):
+        self.dom = dom
+        self.exd = exd
+        self.type = type
+
+    super().__init__('18th feb','12th dec')
+
+    
+
+        
+
+        
+
 
         
 
