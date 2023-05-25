@@ -135,7 +135,7 @@ obj.display_info()
 
 #adding more features
 
-class Flour():
+'''class Flour():
 
     def __init__(self,dom,exd):
         self.dom = dom
@@ -159,6 +159,40 @@ class flour1(Flour):
 obj = flour1('12th jan','13th june','Maize flour')
 obj.display()
 obj.display_Info()
+'''
+# multiple inheritance
+
+# Python example to show the working of multiple
+# inheritance
+
+class Base1(object):
+	def __init__(self):
+		self.str1 = "paramesia"
+		print("high diff")
+
+
+class Base2(object):
+	def __init__(self):
+		self.str2 = "zoan"
+		print("mid diff")
+
+
+class Derived(Base1, Base2):
+	def __init__(self):
+
+		# Calling constructors of Base1
+		# and Base2 classes
+		Base1.__init__(self)
+		Base2.__init__(self)
+		print("Derived")
+
+	def printStrs(self):
+		print(self.str1,self.str2)
+
+
+ob = Derived()
+ob.printStrs()
+
 
 
 
