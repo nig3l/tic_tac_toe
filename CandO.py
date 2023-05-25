@@ -147,13 +147,20 @@ class Flour():
 class flour1(Flour):
 
     def __init__(self, dom, exd,type):
-        self.dom = dom
-        self.exd = exd
+        self.f1_dom = dom
+        self.f1_exd = exd
         self.type = type
 
-    super().__init__('18th feb','12th dec')
+        super().__init__("JUNE-2023","AUG-2024")
 
-    
+    def display_Info(self):
+        print(self.f1_dom,self.f1_exd,self.type)
+
+obj = flour1('12th jan','13th june','Maize flour')
+obj.display()
+obj.display_Info()
+
+
 
         
 
