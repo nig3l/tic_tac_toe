@@ -165,7 +165,7 @@ obj.display_Info()
 # Python example to show the working of multiple
 # inheritance
 
-class Base1(object):
+'''class Base1(object):
 	def __init__(self):
 		self.str1 = "paramesia"
 		print("high diff")
@@ -191,7 +191,39 @@ class Derived(Base1, Base2):
 
 
 ob = Derived()
-ob.printStrs()
+ob.printStrs()'''
+
+#the most basic multi-level inheritance
+class Base(object):
+    def __init__(self,name):
+        self.name = name
+
+    def getName(self):
+        return self.name
+    
+class Child(Base):
+        def __init__(self, name, age):
+             Base.__init__(self, name)
+             self.age = age
+
+        def getAge(self):
+           return self.age
+    
+
+class grandchild(Child):
+
+    def __init__(self, name, age, address):
+        Child.__init__(self, name, age)
+        self.address = address
+
+
+    def getAddress(self):
+        return self.address
+    
+obj = grandchild("boa", 39, "amazonlily")
+print(obj.getName(),obj.getAge(),obj.getAddress())
+
+
 
 
 
