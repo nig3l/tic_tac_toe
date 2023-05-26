@@ -262,7 +262,7 @@ print(fullname1.getFirstname())
 
 #polymorohism with class methods
 
-class Kenya():
+'''class Kenya():
 	def capital(self):
 		print("Nairobi is the capital of India.")
 
@@ -289,6 +289,28 @@ for country in (obj_ken, obj_usa):
 	country.language()
 	country.type()
 
+'''
+#some polymorphism that actualy makes sense
+
+class Animal():
+    def speak(self):
+        raise NotImplementedError("shughulikia hio subclass")
+    
+class cat(Animal):
+    def speak(self):
+        return("meow!!!!!!")
+
+class sparrow(Animal):
+    def speak(self):
+        return ("woof!!!")
+
+#creating a list of animal objects
+animals = [cat(),sparrow()]
+
+# calling the speak method on each object
+
+for animal in animals:
+    print(animal.speak())
 
         
 
