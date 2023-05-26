@@ -194,7 +194,7 @@ ob = Derived()
 ob.printStrs()'''
 
 #the most basic multi-level inheritance
-class Base(object):
+'''class Base(object):
     def __init__(self,name):
         self.name = name
 
@@ -223,8 +223,40 @@ class grandchild(Child):
 obj = grandchild("boa", 39, "amazonlily")
 print(obj.getName(),obj.getAge(),obj.getAddress())
 
+'''
 
+#heirarchical inheritance which is pretty interesting to say the least
 
+'''
+class Father(object):
+    def __init__(self,sirname):
+        self.sirname = sirname
+
+    def getSirname(self):
+        return self.sirname
+
+class Kid1(Father):
+    def __init__(self, firstname, sirname):
+        Father().__init__(sirname)  
+        self.firstname = firstname
+
+    def getFirstname(self):
+        return self.firstname
+
+class Kid2(Father):
+    def __init__(self, firstname2,sirname):
+        Father().__init__(sirname) 
+        self.firstname2 = firstname2
+
+    def getfirstname2(self):
+        return self.firstname2
+    
+fullname2 = Kid2("Ace","D.")
+fullname1 = Kid1("Sabo","D.")
+print(fullname2.getfirstname2())
+print(fullname1.getFirstname())
+
+'''
 
 
 
