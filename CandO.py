@@ -258,6 +258,36 @@ print(fullname1.getFirstname())
 
 '''
 
+'''print(len("string"))'''
+
+#polymorohism with class methods
+
+class Kenya():
+	def capital(self):
+		print("Nairobi is the capital of India.")
+
+	def language(self):
+		print("swahili is the most widely spoken language of India.")
+
+	def type(self):
+		print("kenya is a developing country.")
+
+class USA():
+	def capital(self):
+		print("Washington, D.C. is the capital of USA.")
+
+	def language(self):
+		print("English is the primary language of USA.")
+
+	def type(self):
+		print("USA is a developed country.")
+
+obj_ken = Kenya()
+obj_usa = USA()
+for country in (obj_ken, obj_usa):
+	country.capital()
+	country.language()
+	country.type()
 
 
         
