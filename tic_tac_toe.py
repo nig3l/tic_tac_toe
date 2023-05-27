@@ -107,12 +107,12 @@ class TicTacToe:
         #checking whether the game is draw or not
         if self.is_board_filled():
             print ("match draw!!")
-            break
+            #break
 
         #checking whether the game is draw or not
         if self.is_board_filled():
             print("match draw")
-            break
+            #break
 
         #swapping stuff
         player = self.swap_player_turn(player)
