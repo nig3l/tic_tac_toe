@@ -95,7 +95,35 @@ class TicTacToe:
                 self.show_board()
 
                 #takig user input
-                
+
+        row,col = list(
+            map(int,input("entre row and column numbers to fix spot:")).split()
+        )
+        print()
+
+               #fixing the spot  
+        self.fix_spot(row - 1,col - 1, player)
+
+        #checking whether the game is draw or not
+        if self.is_board_filled():
+            print ("match draw!!")
+            break
+
+        #checking whether the game is draw or not
+        if self.is_board_filled():
+            print("match draw")
+            break
+
+        #swapping stuff
+        player = self.swap_player_turn(player)
+
+        #showing the final board
+        print()
+        self.show_board()
+
+        #starting bthe game
+tic_tac_toe = TicTacToe()
+tic_tac_toe.start()           
             
 
 
