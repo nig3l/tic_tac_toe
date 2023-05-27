@@ -33,7 +33,73 @@ class TicTacToe:
                     return win
                 
         #checking columns
+        for i in range(n):
+            win = True
+            for j in range(n):
+                if self.board[j][i] != player:
+                    win = False
+                    break
+                if win:
+                    return win
+                
+        #checking diagonals
+        win = True
+        for i in range(n):
+            if self.board[i][i] != player:
+                win = False
+                break
+            if win:
+                return win
+            
+            win = True
+            for i in range(n):
+                if self.board[i][n - 1 - i] != player:
+                    win = False
+                    break
+
+                if win:
+                    return win
+                return False
+            
+            for row in self.board:
+                for item in row:
+                    if item == '-':
+                        return False
+                    
+            return True
         
+        def is_board_filled(self):
+            for row in self.board:
+                for item in row:
+                    if item == '-':
+                        return False
+                    return True
+                
+        def swap_player_turn(self,player):
+            return 'X' if player == '0' else '0'
+        
+        def show_board(self):
+            for row in self.board:
+                for item in row:
+                    print(item,end=" ")
+
+                print()
+
+        def start(self):
+            self.create_board()
+
+            player = 'X' if self.get_random_first_player() == 1 else '0'
+            while True:
+                print(f"player{player} turn")
+
+                self.show_board()
+
+                #takig user input
+                
+            
+
+
+
 
 
 
