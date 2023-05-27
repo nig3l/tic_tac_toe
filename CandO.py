@@ -312,7 +312,47 @@ animals = [cat(),sparrow()]
 for animal in animals:
     print(animal.speak())
 '''
+#practcing for loops 
+'''
+languages = ['rust','go','scala','js']
+for l in languages:
+    print(l)
+#l acesses each item of sequence on each iteration
+'''
 
+'''values = range(4)
+for i in values:
+    print(i)
+'''
+
+#with no intentions of using items of a sequence in a loop
+
+'''lang = ['chem','bio','phyc']
+for _ in lang :
+    print("__")
+    print("*")
+'''
+
+# a combo with else
+
+digits = [0,1,2,3]
+
+'''for i in digits:
+    print(i)
+else:
+    print("no items left")
+'''
+#applications of loops
+
+stocks = {
+    'AAPL' : 187.7,
+    'MSFT' : 124.05,
+    'FB' : 167.98
+
+}
+
+for key,value in stocks.items():
+    print (key + " : " + str(value))
         
 
         
