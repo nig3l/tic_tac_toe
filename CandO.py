@@ -344,7 +344,7 @@ else:
 '''
 #applications of loops
 
-stocks = {
+'''stocks = {
     'AAPL' : 187.7,
     'MSFT' : 124.05,
     'FB' : 167.98
@@ -353,7 +353,16 @@ stocks = {
 
 for key,value in stocks.items():
     print (key + " : " + str(value))
-        
+   '''
+
+#iterating over a dict  
+print("what in the dictionary is this !!!!")  
+
+d = dict()
+d['x,y,z'] = 123
+d['abc'] = 345
+for i in d:
+    print("%s %d" %(i,d[i]))
 
         
 
