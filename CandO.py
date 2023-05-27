@@ -292,7 +292,7 @@ for country in (obj_ken, obj_usa):
 '''
 #some polymorphism that actualy makes sense
 
-class Animal():
+'''class Animal():
     def speak(self):
         raise NotImplementedError("shughulikia hio subclass")
     
@@ -311,6 +311,7 @@ animals = [cat(),sparrow()]
 
 for animal in animals:
     print(animal.speak())
+'''
 
         
 
