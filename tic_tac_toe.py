@@ -17,7 +17,23 @@ class TicTacToe:
     def fix_spot(self,row,col,player):
         self.board[row][col] = player
 
-    
+    def is_player_win(self,player):
+        win = None
+
+        n = len(self.board)
+
+        #checking rows
+        for i in range(n):
+            win = True
+            for j in range(n):
+                if self.board[i][j] != player:
+                    win = False
+                    break
+                if win:
+                    return win
+                
+        #checking columns
+        
 
 
 
