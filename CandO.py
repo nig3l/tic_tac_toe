@@ -313,6 +313,29 @@ for animal in animals:
     print(animal.speak())
 '''
 #practcing for loops 
+#while loops
+# count = 0
+# while (count < 3):
+#     count += 1
+#     print(count)
+
+# count = 0 
+# while(count < 3): count += 1; print(count)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 '''
 languages = ['rust','go','scala','js']
 for l in languages:
@@ -356,7 +379,7 @@ for key,value in stocks.items():
    '''
 
 #iterating over a dict  
-print("what in the dictionary is this !!!!")  
+'''print("what in the dictionary is this !!!!")  
 
 d = dict()
 d['x,y,z'] = 123
@@ -364,7 +387,9 @@ d['abc'] = 345
 for i in d:
     print("%s %d" %(i,d[i]))
 
-        
+    '''
+
+    
 
 
         
