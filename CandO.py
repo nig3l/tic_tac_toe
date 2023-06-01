@@ -329,13 +329,6 @@ for animal in animals:
 
 
 
-
-
-
-
-
-
-
 '''
 languages = ['rust','go','scala','js']
 for l in languages:
@@ -389,7 +382,29 @@ for i in d:
 
     bool
 
-    '''
+ 
+  '''
+
+# Area of a rectangle
+
+class Rectangle():
+
+    def __init__(self,length,width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length*self.width 
+    
+    def perimeter(self):
+        return 2 * (self.lenght*self.width)
+    
+    
+rect = Rectangle(10,5)
+print(rect)
+    
+    
+
 
     
 
