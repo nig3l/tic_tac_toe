@@ -401,7 +401,12 @@ class Rectangle():
     
     
 rect = Rectangle(10,5)
-print(rect)
+
+# calculate area
+area = rect.area()
+print("the area is :", area)
+
+
     
     
 
