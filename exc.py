@@ -15,5 +15,17 @@ print(modelx.max_speed,modelx.mileage)
     pass
 '''
 
+# Create a child class Bus that will inherit all of the variables and methods of the Vehicle class
+'''class Vehicle:
+    def __init__(self,name,maxspeed,mileage):
+        self.name = name
+        self.maxspeed = maxspeed
+        self.mileage = mileage
 
+class Bus(Vehicle):
+    pass
+
+School_bus = Bus("School Volvo", 180, 12)
+print("Vehicle Name:", School_bus.name, "Speed:", School_bus.max_speed, "Mileage:", School_bus.mileage)
+'''
 
