@@ -36,7 +36,7 @@ print("Vehicle Name:", School_bus.name, "Speed:", School_bus.max_speed, "Mileage
 # Expected output: The seating capacity of a bus is 50 passengers
 
 
-class Vehicle:
+'''class Vehicle:
     def __init__(self, name, max_speed, mileage):
         self.name = name
         self.max_speed = max_speed
@@ -54,8 +54,35 @@ School_bus = Bus("School Volvo", 180, 12)
 print(School_bus.seating_capacity())
 
 
+'''
+
+# Define a class attribute”color” with a default value white. I.e., Every Vehicle should be white.
+# Expected Output:
+
+# Color: White, Vehicle name: School Volvo, Speed: 180, Mileage: 12
+# Color: White, Vehicle name: Audi Q5, Speed: 240, Mileage: 18
 
 
-     
+class Vehicle:
+
+    color = "white"
+
+    def __init__(self, name, max_speed, mileage):
+        self.name = name
+        self.max_speed = max_speed
+        self.mileage = mileage
+
+class Bus(Vehicle):
+    pass
+
+class Car(Vehicle):
+    pass
+
+School_volvo = Bus("School_volvo",180,12)
+print(School_volvo.color,School_volvo.name,School_volvo.max_speed,School_volvo.mileage)
+
+Audi_Q5 = Car("Audi_Q5",240,18)
+print(Audi_Q5.color,Audi_Q5.name,Audi_Q5.max_speed,Audi_Q5.mileage)
+
      
 
