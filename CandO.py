@@ -387,7 +387,7 @@ for i in d:
 
 # Area of a rectangle
 
-class Rectangle():
+'''class Rectangle():
 
     def __init__(self,length,width):
         self.length = length
@@ -404,7 +404,8 @@ rect = Rectangle(10,5)
 
 # calculate area
 area = rect.area()
-print("the area is :", area)
+print("the area is :", area)'''
+
 
 
     
