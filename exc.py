@@ -63,7 +63,7 @@ print(School_bus.seating_capacity())
 # Color: White, Vehicle name: Audi Q5, Speed: 240, Mileage: 18
 
 
-class Vehicle:
+'''class Vehicle:
 
     color = "white"
 
@@ -84,5 +84,41 @@ print(School_volvo.color,School_volvo.name,School_volvo.max_speed,School_volvo.m
 Audi_Q5 = Car("Audi_Q5",240,18)
 print(Audi_Q5.color,Audi_Q5.name,Audi_Q5.max_speed,Audi_Q5.mileage)
 
+ '''
      
+# Create a Bus child class that inherits from the Vehicle class.
+#  The default fare charge of any vehicle is seating capacity * 100. 
+# If Vehicle is Bus instance, we need to add an extra 10% on full fare as a maintenance charge. 
+# So total fare for bus instance will become the final amount = total fare + 10% of the total fare.
+
+# Note: The bus seating capacity is 50. so the final fare amount should be 5500. 
+# You need to override the fare() method of a Vehicle class in Bus class.
+
+# Expected Output:
+
+# Total Bus fare is: 5500.0
+
+class Vehicle:
+    def __init__(self,name,mileage,capacity):
+        self.name = name
+        self.mileage = mileage
+        self.capacity = capacity
+
+    def fare(self):
+        return self.capacity * 100
+    
+class Bus(Vehicle):
+
+    def fare(self):
+        amount = super().fare()
+        amount += amount * 10 / 100
+        return amount
+
+
+        
+    
+
+School_bus = Bus("School Volvo", 12, 50)
+print("Total Bus fare is:", School_bus.fare())
+
 
