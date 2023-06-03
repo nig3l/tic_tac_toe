@@ -123,7 +123,7 @@ class TicTacToe:
 
         #starting bthe game
 tic_tac_toe = TicTacToe()
-tic_tac_toe.start()           
+# print(tic_tac_toe.board)          
             
 
 
