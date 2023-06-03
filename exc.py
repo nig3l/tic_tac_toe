@@ -98,7 +98,7 @@ print(Audi_Q5.color,Audi_Q5.name,Audi_Q5.max_speed,Audi_Q5.mileage)
 
 # Total Bus fare is: 5500.0
 
-class Vehicle:
+'''class Vehicle:
     def __init__(self,name,mileage,capacity):
         self.name = name
         self.mileage = mileage
@@ -120,5 +120,26 @@ class Bus(Vehicle):
 
 School_bus = Bus("School Volvo", 12, 50)
 print("Total Bus fare is:", School_bus.fare())
+
+'''
+
+#  Check type of an object
+# Write a program to determine which class a given Bus object belongs to.
+
+
+'''class Vehicle:
+    def __init__(self, name, mileage, capacity):
+        self.name = name
+        self.mileage = mileage
+        self.capacity = capacity
+
+class Bus(Vehicle):
+    pass
+
+School_bus = Bus("School Volvo", 12, 50)
+
+print(type(School_bus))
+
+'''
 
 
