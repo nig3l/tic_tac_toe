@@ -347,7 +347,7 @@ vehicle = Car(tsla,modelY,2020,red)
 vehicle.drive()
 vehicle.stop()
 '''
-Question 
+# Question 
 
 # Write a program to create a class named Point that has the following attributes:
 
@@ -359,19 +359,48 @@ Question
 
 # Create two instances of the Point class and call the distance() and slope() methods.
 
-class Point():
+'''class Point():
     def __init__(self,x,y):
         self.x = x
         self.y = y
 
-    def distance(self):
-        print (x -y)
+    def distance(self,other):
+        return ((self.x - other.x)** 2 + (self.y - other.y) **2 ) ** 0.5
+    
+    def slope(self, other):
+        return (self.y - other.y) / (self.x - other.x)
 
-    def slope(self):
-        
+
+point1 = Point(0, 0)
+point2 = Point(10, 10)
+
+print(point1.distance(point2))  # 14.142135623730951
+print(point1.slope(point2))  # 1
+
+ '''
+
+# Create a class called Circle with attributes radius and color. 
+# Implement a method called area that calculates and returns the area of the circle.
+#  Also, implement a method called display that prints the color and radius of the circle.
+
+import math  
+class Circle():
     
-    
+    def __init__(self,radius,color):
+        self.radius = radius
+        self.color = color
+
+    def area(self):
+
+        return math.pi * self.radius ** 2
         
+        
+    def display(self):
+        return self.color , self.area()
+    
+A1 = Circle(3,"black")
+print(A1.display())
+
 
 
 
