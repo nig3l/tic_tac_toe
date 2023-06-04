@@ -157,4 +157,43 @@ print(isinstance(School_bus, Vehicle))
 
 '''
 
+# Create a class called Employee with attributes name, salary, and department.
+#  Implement a method called apply_raise that increases the salary of the employee by a certain percentage. 
+# Also, implement a method called display that prints the employee's name, salary, and department.
 
+'''class Employee:
+    def __init__(self,name,salary,department):
+        self.name = name
+        self.salary = salary
+        self.department = department
+
+    def apply_raise(self,amountp):
+        self.salary += amountp * (amountp/100)    # the '+=' operator is meant to increase the self.salary attribute by the value of amountp
+    
+    def display(self):
+        print(self.name,self.salary,self.department)
+
+    '''
+
+# Create a class called Car with attributes make, model, and year. 
+# Implement a method called start_engine that prints a message indicating that the car's engine has started.
+# Also, implement a method called drive that takes a distance as an argument and prints a message indicating the distance driven.
+
+'''class Car:
+    def __init__(self,make,model,year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def start_engine(self):
+        print("the car has started")
+
+    def drive(self,distance):
+        self.distance = distance
+        print("Distance covered is : ", distance)
+'''
+
+
+
+
+        
