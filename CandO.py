@@ -383,7 +383,7 @@ print(point1.slope(point2))  # 1
 # Implement a method called area that calculates and returns the area of the circle.
 #  Also, implement a method called display that prints the color and radius of the circle.
 
-import math  
+'''import math  
 class Circle():
     
     def __init__(self,radius,color):
@@ -401,7 +401,50 @@ class Circle():
 A1 = Circle(3,"black")
 print(A1.display())
 
+'''
+# Create a class called Rectangle with attributes width and height. 
+# Implement a method called area that calculates and returns the area of the rectangle.
+# Also, implement a method called is_square that checks if the rectangle is a square (i.e., width and height are equal).
 
+'''class Rectangle():
+
+    def __init__(self,width,height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+    
+    def is_square(self):
+         return self.height == self.width    # this is supposed to return a boolean value hence the format
+    
+'''
+
+# Create a class called BankAccount with attributes account_number, balance, and owner_name. 
+# Implement methods called deposit and withdraw that update the balance accordingly. 
+# Additionally, implement a method called display that prints the account details.
+'''
+class BankAccount():
+    def __init__(self,account_number,balance,owner_game):
+        self.account_number = account_number
+        self.balance = balance
+        self. owner_game = owner_game
+
+    def deposit(self,amount):
+        self.amount += amount
+
+    def withdraw(self):
+        if self.amount <= self.balance:
+            self.balance -= self.amount
+        else:
+            print("insufficient balance")
+        
+
+
+    def display(self):
+        print(f"Account: number={self.account_number}, balance={self.balance}, owner={self.owner_name}")
+
+'''
 
 
 
