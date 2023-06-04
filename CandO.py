@@ -311,7 +311,85 @@ animals = [cat(),sparrow()]
 
 for animal in animals:
     print(animal.speak())
+
 '''
+
+# 1. Create a class called `Car` that has the following attributes:
+#     * `make`: The make of the car
+#     * `model`: The model of the car
+#     * `year`: The year the car was made
+#     * `color`: The color of the car
+
+# 2. Create a method called `drive()` in the `Car` class that prints the following message:
+#     * "The car is driving."
+
+# 3. Create a method called `stop()` in the `Car` class that prints the following message:
+#     * "The car has stopped."
+
+# 4. Create an instance of the `Car` class and call the `drive()` and `stop()` methods.
+
+
+'''class Car():
+
+    def __init__(self,make,model,year,color):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.color = color
+
+
+    def drive(self):
+        return "the car is driving"
+    def stop():
+        return "the car has stopped"
+    
+vehicle = Car(tsla,modelY,2020,red)
+vehicle.drive()
+vehicle.stop()
+'''
+Question 
+
+# Write a program to create a class named Point that has the following attributes:
+
+# x: The x-coordinate of the point
+# y: The y-coordinate of the point
+# Write a method called distance() in the Point class that calculates the distance between two points.
+
+# Write a method called slope() in the Point class that calculates the slope of a line passing through two points.
+
+# Create two instances of the Point class and call the distance() and slope() methods.
+
+class Point():
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+
+    def distance(self):
+        print (x -y)
+
+    def slope(self):
+        
+    
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #practcing for loops 
 #while loops
 # count = 0
@@ -351,9 +429,9 @@ for _ in lang :
 
 # a combo with else
 
-digits = [0,1,2,3]
+'''digits = [0,1,2,3]
 
-'''for i in digits:
+for i in digits:
     print(i)
 else:
     print("no items left")
