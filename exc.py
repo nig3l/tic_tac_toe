@@ -193,7 +193,26 @@ print(isinstance(School_bus, Vehicle))
         print("Distance covered is : ", distance)
 '''
 
+# Create a base class called Shape with a method calculate_area() that returns 0. 
+# Create a derived class called Rectangle that inherits from Shape and overrides 
+# the calculate_area() method to calculate 
+# and return the area of a rectangle given its width and height
 
 
+class Shape:
+
+    def calculate_area(self):
+        return 0
+    
+class Rectangle(Shape):
+     
+     def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+     def calculate_area(self):
+        return self.height * self.width
+        
+    
 
         
