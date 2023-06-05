@@ -234,7 +234,7 @@ class Dog(Animal):
 # Create a derived class called Car that inherits from Vehicle and
 # adds an additional attribute year and a method start_engine() that prints "Engine started".
 
-class Vehicle():
+'''class Vehicle():
     def __init__(self,make,model):
         self.make = make
         self.model = model
@@ -250,9 +250,58 @@ class car(Vehicle):
     def start_engine(self):
         print("engine started")
 
-        
+'''
+
+# Create a base class called Employee with attributes name and salary, and a method display_info() that prints the name and salary of the employee. 
+# Create a derived class called Manager that inherits from Employee 
+# and adds an additional attribute department and 
+# a method display_department() that prints the department of the manager.
+
+'''class Employee():
+    def __init__(self,name,salary):
+        self.name = name
+        self.salary = salary
+
+    def display_info(self):
+        print(self.name, self.salary)
+
+class Manager(Employee):
+    def __init__(self, name, salary,department):
+        super().__init__(name, salary)
+        self.department = department
+
+    def display_department(self):
+        print(self.department)
+
+'''
+# Create a base class called Shape with attributes color and filled, 
+# and a method display_info() that prints the color and filled status of the shape. 
+# Create a derived class called Circle that inherits from Shape 
+# and adds an additional attribute radius and a method calculate_area() 
+# that calculates and returns the area of the circle.
+
+'''import math
+class Shape():
+    def __init__(self,color,filled):
+        self.color = color 
+        self.filled = filled
+
+    def display_info(self):
+        print(self.color,self.filled)
+
+class Circle(Shape):
+    def __init__(self, color, filled,radius):
+        super().__init__(color, filled)
+        self.radius = radius
+
+    def calculate_area(self):
+        return math.pi * self.radius ** 2
+
+    '''   
+
+ 
+    
         
 
 
 
-        
