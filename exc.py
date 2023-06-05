@@ -199,7 +199,7 @@ print(isinstance(School_bus, Vehicle))
 # and return the area of a rectangle given its width and height
 
 
-class Shape:
+'''class Shape:
 
     def calculate_area(self):
         return 0
@@ -213,6 +213,46 @@ class Rectangle(Shape):
      def calculate_area(self):
         return self.height * self.width
         
+   '''
+# Create a base class called Animal with a method make_sound() that prints "Animal sound". 
+# Create a derived class called Dog that inherits from Animal 
+# and overrides the make_sound() method to print "Bark".
+
+'''class Animal():
+
+    def make_sound(self):
+        print("animal sound")
+
+class Dog(Animal):
+    def make_sound(self):
+        print("bark")
     
+'''
+
+# Create a base class called Vehicle with attributes make and model, 
+# and a method display_info() that prints the make and model of the vehicle. 
+# Create a derived class called Car that inherits from Vehicle and
+# adds an additional attribute year and a method start_engine() that prints "Engine started".
+
+class Vehicle():
+    def __init__(self,make,model):
+        self.make = make
+        self.model = model
+
+    def display_info(self):
+        print(self.make, self.model)
+
+class car(Vehicle):
+    def __init__(self, make, model,year):
+        super().__init__(make, model) # you have to call the parents' innit method
+        self.year = year
+
+    def start_engine(self):
+        print("engine started")
+
+        
+        
+
+
 
         
