@@ -301,9 +301,21 @@ class Circle(Shape):
 
 #for loop to print numbers 1-10
 
+'''
 for i in range(1,11):
     print(i)
-    
+ '''
+
+# Calculate the sum of all numbers from 1 to 100.  
+
+'''
+sum = 0
+for num in range(1,101):
+    sum += num
+    print(sum)
+'''
+
+
         
 
 
