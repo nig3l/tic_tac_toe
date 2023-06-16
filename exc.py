@@ -362,4 +362,36 @@ I2.speak()
 
 '''
 
+# Composition:
+# Create a class called Author with attributes name and books, where books is a list of book titles written by the author.
+# Create another class called Library with an attribute authors, which is a list of Author objects. 
+# Implement a method display_books() in the Library class that displays all the book titles and their respective authors.
+
+'''class Author:
+    def __init__(self,name,books):
+        self.name = name
+        self.books = books
+
+        # books = []
+       
+
+class Library:
+    def __init__(self,authors):
+        self.authors = []
+
+    def add_author(self, author):
+        self.authors.append(author)
+
+
+
+    def display_books(self):
+            for author in self.authors:
+               print(f"{author.name}:")
+
+            for book in author.books:
+                print(book)
+
+                return Author
+'''
+
 
