@@ -337,10 +337,29 @@ print(rectangle.area())
      '''
 
 
-Polymorphism:
-Create a base class called Animal with a method speak() that prints a generic sound. 
-Create derived classes Dog and Cat that inherit from Animal and override the speak() method to print the specific sound of each animal. 
-Create instances of Dog and Cat and call their speak() methods.
+# Polymorphism:
+# Create a base class called Animal with a method speak() that prints a generic sound. 
+# Create derived classes Dog and Cat that inherit from Animal and override the speak() method to print the specific sound of each animal. 
+# Create instances of Dog and Cat and call their speak() methods.
 
+'''class Animal:
+    def speak(self):
+        print("chirp!!!!!")
+
+class Dog(Animal):
+    def speak(self):
+        print("woof!")
+
+class Cat(Animal):
+     def speak(self):
+         print("meow!!!")
+
+I1 = Dog()
+I2 = Cat()
+
+I1.speak()
+I2.speak()
+
+'''
 
 
