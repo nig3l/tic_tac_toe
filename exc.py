@@ -315,8 +315,32 @@ for num in range(1,101):
     print(sum)
 '''
 
+# Inheritance:
+# Create a base class called Shape with a method area() that calculates and returns the area of the shape. 
+# Create a derived class Rectangle that inherits from Shape and has additional attributes length and width. 
+# Implement the area() method in the Rectangle class to calculate and return the area of the rectangle.
 
-        
+'''class Shape:
+    def area(self):
+        pass
+
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    
+    def area(self):
+        return self.length * self.width
+
+rectangle = Rectangle(5, 3)
+print(rectangle.area())
+     '''
+
+
+Polymorphism:
+Create a base class called Animal with a method speak() that prints a generic sound. 
+Create derived classes Dog and Cat that inherit from Animal and override the speak() method to print the specific sound of each animal. 
+Create instances of Dog and Cat and call their speak() methods.
 
 
 
