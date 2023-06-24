@@ -409,7 +409,7 @@ with them:
 "bowtie" = 4
 "monocle" = 5
 Everything else has 0 points.
-Use the test cases below to guide you!"""
+Use the test cases below to guide you!
 
 class Classy(object):
     def __init__(self):
@@ -448,3 +448,51 @@ print(me.getClassiness())
 me.addItem("bowtie")
 # Should be 15
 print(me.getClassiness())
+
+"""
+
+# Write a function called "show_excitement" where the string
+# "I am super excited for this course!" is returned exactly
+# 5 times, where each sentence is separated by a single space.
+# Return the string with "return".
+# You can only have the string once in your code.
+# Don't just copy/paste it 5 times into a single variable!
+
+
+# def show_excitement():
+#     return "I am super excited for this course! " * 5
+
+# print(show_excitement())
+'''
+def show_excitement():
+    return " ".join(["I am super excited for this course!"] * 5)
+
+print(show_excitement())
+
+'''
+
+# implementing a data structure using linked lists
+# class Node:
+#     def __init__(self, data=None):
+#         self.data = data
+#         self.next = None
+
+# class Stack:
+#     def __init__(self):
+#         self.head = None
+
+#     def is_empty(self):
+#         return self.head is None
+
+#     def push(self, data):
+#         new_node = Node(data)
+#         new_node.next = self.head
+#         self.head = new_node
+
+#     def pop(self):
+#         if self.is_empty():
+#             raise Exception("Stack is empty")
+#         popped_value = self.head.data
+#         self.head = self.head.next
+#         return popped_value
+    
