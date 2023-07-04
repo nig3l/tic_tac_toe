@@ -499,7 +499,7 @@ print(show_excitement())
 # Write a Python program to create a class representing a Circle. 
 # Include methods to calculate its area and perimeter. 
 
-import math
+'''import math
 class Circle:
     def __init__(self,radius):
         self.radius = radius
@@ -519,3 +519,13 @@ perimeter = circle.get_perimeter()
 
 print("Area of the circle:", area)
 print("Perimeter of the circle:", perimeter)
+
+'''
+
+
+#  Write a Python program to create a person class. 
+# Include attributes like name, country and date of birth. 
+# Implement a method to determine the person's age. 
+
+
+
