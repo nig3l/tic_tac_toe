@@ -496,3 +496,26 @@ print(show_excitement())
 #         self.head = self.head.next
 #         return popped_value
     
+# Write a Python program to create a class representing a Circle. 
+# Include methods to calculate its area and perimeter. 
+
+import math
+class Circle:
+    def __init__(self,radius):
+        self.radius = radius
+
+    def get_area(self):
+        return math.pi * self.radius ** 2
+    
+    def get_perimeter(self):
+        return 2 * math.pi * self.radius
+    
+# create an instance of the class 
+
+circle = Circle(9)
+
+area = circle.get_area()
+perimeter = circle.get_perimeter()
+
+print("Area of the circle:", area)
+print("Perimeter of the circle:", perimeter)
