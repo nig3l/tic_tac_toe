@@ -575,7 +575,7 @@ class Calc:
 # Include methods to calculate its area and perimeter. 
 # Implement subclasses for different shapes like circle, triangle, and square.
 
-
+''' 
 import math
 
 class Shape:
@@ -613,7 +613,7 @@ class Triangle(Shape):
 
 
 class Rectangle(Shape):
-    
+
     def __init__(self, length, width):
         self.length = length
         self.width = width
@@ -624,8 +624,95 @@ class Rectangle(Shape):
     def calculate_perimeter(self):
         return 2 * (self.length + self.width)
         
-    
+  '''
 
+# Write a Python program to create a class representing a binary search tree.
+#  Include methods for inserting and searching for elements in the binary tree.   
+
+'''
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+   
+    def __str__(self):
+        return str(self.value)
+
+class BinarySearchTree:
+    def __init__(self):
+        self.root = None
+
+    def insert(self, value):
+        if self.root is None:
+            self.root = Node(value)
+        else:
+            self._insert_recursive(self.root, value)
+
+    def _insert_recursive(self, node, value):
+        if value < node.value:
+            if node.left is None:
+                node.left = Node(value)
+            else:
+                self._insert_recursive(node.left, value)
+        elif value > node.value:
+            if node.right is None:
+                node.right = Node(value)
+            else:
+                self._insert_recursive(node.right, value)
+
+    def search(self, value):
+        return self._search_recursive(self.root, value)
+
+    def _search_recursive(self, node, value):
+        if node is None or node.value == value:
+            return node
+        if value < node.value:
+            return self._search_recursive(node.left, value)
+        else:
+            return self._search_recursive(node.right, value)
+
+# Example usage
+bst = BinarySearchTree()
+
+bst.insert(5)
+bst.insert(3)
+bst.insert(7)
+bst.insert(2)
+bst.insert(4)
+bst.insert(6)
+bst.insert(8)
+
+print("Searching for elements:")
+print(bst.search(4))  # Found, returns the node (4)
+print(bst.search(9))  # Not found, returns None
+
+'''
+
+# Write a Python program to create a class representing a shopping cart.
+#  Include methods for adding and removing items, and calculating the total price. 
+
+class Shoppingcart:
+
+    def __init__(self):
+        self.items = []
+
+    def add_items(self,item_name, qty):
+        item = (item_name, qty)
+        self.items.append(item)
+        
+
+    def remove_items(self,item_name):
+        for item in self.items:
+            if item[0] == item_name:
+                self.items.remove(item)
+                break
+
+    def total_price(self):
+        total = 0
+        for item in self.items:
+            total += item[1]
+        return total
 
     
         
