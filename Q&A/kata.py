@@ -65,17 +65,31 @@ def check(seq, elem):
 
 
 def feast(beast, dish):
- # Extract the first and last letters of the beast and dish
+
+ # Extracting the first and last letters of the beast and dish
+
     beast_start = beast[0]
     beast_end = beast[-1]
     dish_start = dish[0]
     dish_end = dish[-1]
     
     # Check if the first and last letters match
+
     if beast_start == dish_start and beast_end == dish_end:
         return True
     else:
         return False
+
+# Write a function that takes an array of words and smashes them together into a sentence and returns the sentence.
+# You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. 
+# Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+
+def smash(words):
+    # join the words with spaces " " 
+    sent = " ".join(words)
+    return sent
+
+
 
 
     
