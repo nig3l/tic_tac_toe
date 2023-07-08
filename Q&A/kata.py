@@ -120,9 +120,13 @@ def switch_it_up(number):
     # Return the word for the given number
     return number_words[number]
 
+# The first century spans from the year 1 up to and including the year 100, 
+# the second century - from the year 101 up to and including the year 200, etc.
+# Given a year, return the century it is in.
 
-
-    
+def century(year):
+    century = (year - 1) // 100 + 1
+    return century
 
 
 
