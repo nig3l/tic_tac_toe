@@ -692,6 +692,7 @@ print(bst.search(9))  # Not found, returns None
 # Write a Python program to create a class representing a shopping cart.
 #  Include methods for adding and removing items, and calculating the total price. 
 
+'''
 class Shoppingcart:
 
     def __init__(self):
@@ -724,4 +725,4 @@ class Shoppingcart:
 
         
 
-
+'''
