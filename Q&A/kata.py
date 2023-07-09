@@ -129,4 +129,27 @@ def century(year):
     return century
 
 
+# In this kata, you are asked to square every digit of a number and concatenate them.
+
+# For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1. (81-1-1-81)
+
+# Example #2: An input of 765 will/should return 493625 because 72 is 49, 62 is 36, and 52 is 25. (49-36-25)
+
+def square_digits(num):
+    result = ""
+    for digit in str(num):
+        squared_digit = int(digit) ** 2
+        result += str(squared_digit)
+    return int(result)
+
+# Write a function that removes the spaces from the string, then return the resultant string.
+
+def rm_space(string):
+    return string.replace(" ","")
+
+# Nathan loves cycling.
+
+# Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+
+# You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
 
