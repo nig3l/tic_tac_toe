@@ -177,5 +177,30 @@ def filter_list(l):
     return [x for x in l if not isinstance(x, str)]
 
 
+# Return the number (count) of vowels in the given string.
+
+# We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+# The input string will only consist of lower case letters and/or spaces.
+
+def get_count(sentence):
+    vowels = {'a', 'e', 'i', 'o', 'u'}
+    return sum(sentence.count(vowel) for vowel in vowels)
+
+  
+   
+# Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+
+def xo(s):
+    count_x = 0
+    count_o = 0
+    for char in s.lower():
+        if char == 'x':
+            count_x += 1
+        elif char == 'o':
+            count_o += 1
+    return count_x == count_o
+
+    
     
 
