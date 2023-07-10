@@ -217,6 +217,33 @@ def friend(x):
     return [name for name in x if len(name)==4]
     #Code
 
+# There was a test in your class and you passed it. Congratulations!
+# But you're an ambitious person. You want to know if you're better than the average student in your class.
 
+# You receive an array with your peers' test scores. Now calculate the average and compare your score!
+
+# Return True if you're better, else False!
+
+# Note:
+# Your points are not included in the array of your class's points. 
+# For calculating the average point you may add your point to the given array!
     
+def better_than_average(class_points, your_points):
+    total_scores = sum(class_points) + your_points
+    average = total_scores / (len(class_points) + 1)  # Adding 1 for your score
+    return your_points > average
+
+# Timmy & Sarah think they are in love, but around where they live, 
+# they will only know once they pick a flower each. 
+# If one of the flowers has an even number of petals and 
+# the other has an odd number of petals it means they are in love.
+
+# Write a function that will take the number of petals of each flower 
+# and return true if they are in love and false if they aren't.
+
+def lovefunc( flower1, flower2 ):
+    return flower1 % 2 != flower2 % 2
+    
+
+
 
