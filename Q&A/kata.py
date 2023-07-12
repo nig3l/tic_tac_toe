@@ -288,6 +288,54 @@ def bool_to_word(boolean):
 def descending_order(num):
     return int(''.join(sorted(str(num), reverse=True)))
 
+
+
+# Write a program that finds the summation of every number from 1 to num. 
+# The number will always be a positive integer greater than 0.
+
+def summation(num):
+    lst = []
+    for x in range(1, num + 1):
+        lst.append(x)
+    return sum(lst)
+
+# Trolls are attacking your comment section!
+
+# A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+# Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+# For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+
+
+def disemvowel(string_):
+    newstring = []
+    vowels = "aeiouAEIOU"
+    for letter in string_:
+        if letter not in vowels:
+            newstring.append(letter)
+    return "".join(newstring)
+
+# honorable mention
+
+def disemvowel(string_):
+    for i in "aeiouAEIOU":
+        string_ = i.replace(i,"")
+
+        return string_
+    
+
+
+    
+        
+
+    
+
+
+    
+    
+
     
 
    
