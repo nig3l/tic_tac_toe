@@ -345,7 +345,22 @@ def remove_smallest(numbers):
     else:
         min_index = numbers.index(min(numbers))
         return numbers[:min_index] + numbers[min_index+1:]
+    
 
+# Clock shows h hours, m minutes and s seconds after midnight.
+
+# Your task is to write a function which returns the time since midnight in milliseconds
+
+def past(h, m, s):
+
+    hr = h*3600000
+    min = m*60000
+    sec = s*1000
+
+    time = hr+min+sec
+
+    return time
+   
 
    
 
